@@ -1,0 +1,44 @@
+baseURL = "https://1brusk.github.io/1brusk/"
+theme   = "introduction"
+defaultContentLanguage = "en"
+
+[params]
+    themeStyle   = "auto"
+    showMenu     = true
+    fadeIn       = true
+    dateFormat   = "Jan 2, 2006"
+    email        = ""
+
+    [params.home]
+        introHeight           = "fullheight"
+        showLatest            = true
+        showAllPosts          = false
+        numberOfProjectsToShow = 3
+        localTime             = false
+
+    [[params.social]]
+        url       = "https://github.com/1brusk"
+        icon      = "github"
+        icon_pack = "fab"
+
+[taxonomies]
+    tag    = "tags"
+    series = "series"
+
+[markup]
+    defaultMarkdownHandler = "goldmark"
+    [markup.goldmark.renderer]
+        unsafe = true
+    [markup.highlight]
+        codeFences = true
+        style      = "solarized-dark"
+
+[languages]
+    [languages.en]
+        languageName = "English"
+        languageCode = "en-us"
+        contentDir   = "content/en"
+        weight       = 0
+        title        = "1brusk"
+        [languages.en.params]
+            description = "Personal website of 1brusk"
