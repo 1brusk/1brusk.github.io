@@ -1,6 +1,6 @@
 baseURL = "https://1brusk.github.io/1brusk/"
 theme   = "introduction"
-DefaultContentLanguage = "en"
+defaultContentLanguage = "en"
 
 [params]
     themeStyle   = "auto"

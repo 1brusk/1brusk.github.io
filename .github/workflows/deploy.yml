@@ -27,7 +27,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "latest"
+          hugo-version: "0.128.2"
           extended: true
 
       - name: Setup Node
@@ -36,7 +36,7 @@ jobs:
           node-version: "20"
 
       - name: Install PostCSS
-        run: npm install -g postcss postcss-cli autoprefixer
+        run: npm install -g postcss@8.4.49 postcss-cli@11.0.0 autoprefixer@10.4.20
 
       - name: Setup Pages
         id: pages
